@@ -1,0 +1,19 @@
+/* 
+    Positioning of embedded map
+*/
+.map-container {
+    position: absolute;
+    top: 20%;
+    bottom: 10%;
+    right: 15%;
+    width: 70%;
+}
+
+/*
+    Positioning of data links next to map 
+*/
+.ground{
+    position: absolute;
+    top: 30%;
+    left: 2%;
+}
