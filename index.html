@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme = 'dark'>
 <head>
     <!-- set up webpage, create links to mapbox source and css style-->
     <meta charset="UTF-8">
@@ -14,11 +14,39 @@ rel='stylesheet'/>
     <link rel="stylesheet" href="style.css" >
 </head>
 <body>
+    <div class = "container">
+        <!-- webpage header -->
+        <div class = "container">
+            <div class = "heading">
+                <h1> Airport Activity in Canada </h1>
+                <p> This map features the International Airports in Canada. 
+                    The symbols signify the amount of aircraft movement within each airport. <br>
+                    It also features the top 5 most travelled domestic flight 
+                    routes between international airports in Canada. <br>
+                    Numbers for aircraft movement were derived from <a target = "_blank" href="https://en.wikipedia.org/wiki/List_of_the_busiest_airports_in_Canada
+                    ">here. </a> <br>
+                    Zoom in an out of the map. Hover over a point to see the airport name. 
+                </p>
+            </div>
+        </div>
+    <div>
     <!-- map-container object that calls upon the map object specified in the script.js-->
     <div id="my-map" class="map-container"></div>
-
+    <div class = "ground">
+        <p>See the following links to the file <br> sources <br>
+        
+        <a  target ="_blank" href="https://raw.githubusercontent.com/mahm44/lab3/main/airportPoints.geojson"> 
+            Airports GeoJSON </a> <br>
+        <a  target ="_blank" href="https://studio.mapbox.com/tilesets/mahm.3007dieb"> Airport Routes Vector Tileset </a> <br>
+        <!-- button to apply filter on map -->
+        Try using this button to view  <br>
+        airports with aircraft movement <br>
+        less than 100,000:
+        <button type = "button" id = "btn"> Apply Filter </button> <br>
+        Click the button again to <br>
+        remove the filter. 
+    </p>
+    </div>
     <script src = "script.js" ></script>
 </body>
 </html>
-
-<!-- update style w/ one for new json -->
